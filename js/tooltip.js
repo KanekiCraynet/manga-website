@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".data-tooltip").each(function(){var t=$(this),o=t.attr("data-tooltip-id");t.qtip({content:{text:`<img class="" src="${loaderImg}" alt="Loading..." />`,ajax:{url:tooltipUrl,type:"POST",loading:!1,data:"id="+o}},show:"mouseover",hide:{delay:200,fixed:!0},position:{target:"mouse",viewport:$(window)}})})});
